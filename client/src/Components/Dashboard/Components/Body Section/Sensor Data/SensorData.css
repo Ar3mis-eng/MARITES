@@ -1,0 +1,97 @@
+:root {
+  --primaryColor: #800000; /* Maroon */
+  --hoverColor: #a83232;
+  --primaryColorDark: #4d0000;
+  --accent-color: #e57373;
+  --bg-color: #fdfdfd;
+  --text-color: #1a1a1a;
+  --muted-text: #666;
+  --inputcolor1: hsl(330, 12%, 97%);
+  --inputcolor2: hsl(154, 14%, 90%);
+  /* Fonts and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.sensorDataContainer {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.sensorDataContainer h2 {
+  font-size: var(--h2FontSize);
+  color: var(--text-color);
+  font-weight: 800;
+}
+.sensorDataContainer p {
+  margin-top: 0.5rem;
+  font-size: var(--normalFontSize);
+  color: var(--muted-text);
+}
+.sensorDataContainer .sensorCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.sensorDataContainer .sensorCards .card {
+  width: 32.5%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--hoverColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.sensorDataContainer .sensorCards .card .icon {
+  margin-right: 0.5rem;
+  color: var(--bg-color);
+  font-size: 1.5rem;
+}
+.sensorDataContainer .sensorCards .card:hover {
+  background-color: var(--accent-color);
+}
+.sensorDataContainer .sensorCards .card .nodeName {
+  font-size: var(--h1FontSize);
+  color: var(--bg-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  position: relative;
+}
+.sensorDataContainer .sensorCards .card p {
+  font-size: var(--h2FontSize);
+  color: var(--bg-color);
+}
+
+.fade-in-graph {
+  animation: fadeIn 0.7s;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.graph-placeholder {
+  height: 200px;
+  background: #eaeaea;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}/*# sourceMappingURL=SensorData.css.map */

@@ -1,0 +1,117 @@
+:root{
+    --primaryColor: #800000; /* Maroon */
+    --hoverColor: #a83232;
+    --primaryColorDark: #4d0000;
+    --accent-color: #e57373;
+    --bg-color: #fdfdfd;
+    --text-color: #1a1a1a;
+    --muted-text: #666;
+    --inputcolor1: hsl(330, 12%, 97%);
+    --inputcolor2: hsl(154, 14%, 90%);
+
+    /* Fonts and Typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.activeAlertsContainer{
+    width: 82%;
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+
+    h2{
+        font-size: var(--h2FontSize);
+        color: var(--text-color);
+        font-weight: 800;
+    }
+
+    p{
+        margin-top: .5rem;
+        font-size: var(--normalFontSize);
+        color: var(--muted-text);
+    }
+
+    .searchBar{
+        margin-top: 4rem;
+        padding: 2.5px 10px 2.5px 10px;
+
+        h3{
+            margin-bottom: .5rem;
+        }
+
+        input{
+            padding: 3px;
+        }
+
+        .searchButton{
+            position: relative;
+            margin-left: .2rem;
+            padding: 2.5px 10px 4.5px 10px;
+            border: none;
+            border-radius: 3px;
+            transition: .3s ease;
+            background: var(--hoverColor);
+            color: var(--bg-color);
+            justify-content: flex-start;
+            z-index: 1;
+
+            .icon{
+                font-size: 15px;
+                position: relative;
+                left: 25%;
+                padding: 0 -10px 0 0;
+                transform: translateX(-80%) translateY(20%);
+                transition: .3s ease;
+                cursor: pointer;
+            }
+
+            &:hover{
+                background: var(--accent-color);
+                color: var(--bg-color);
+            }
+        }
+    }
+
+    .activeAlertsTbl{
+        
+        table{
+            margin-top: 3rem;
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #f4f4f4;
+        }
+
+        tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+    }
+}
+
+// .unavailabilityMessage {
+//     height: 200px;
+//     background: #eaeaea;
+//     border-radius: 8px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: #888;
+//     font-size: 1.2rem;
+//     margin-top: 1rem;
+// }

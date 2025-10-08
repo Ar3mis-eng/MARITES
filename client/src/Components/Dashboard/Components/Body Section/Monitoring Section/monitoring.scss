@@ -1,0 +1,106 @@
+:root{
+    --primaryColor: #800000; /* Maroon */
+    --hoverColor: #a83232;
+    --primaryColorDark: #4d0000;
+    --accent-color: #e57373;
+    --bg-color: #fdfdfd;
+    --text-color: #1a1a1a;
+    --muted-text: #666;
+    --inputcolor1: hsl(330, 12%, 97%);
+    --inputcolor2: hsl(154, 14%, 90%);
+
+    /* Fonts and Typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+.monitoringContainer{
+    width: 82%;
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+
+    h2{
+        font-size: var(--h2FontSize);
+        color: var(--text-color);
+        font-weight: 800;
+    }
+
+    p{
+        margin-top: .5rem;
+        font-size: var(--normalFontSize);
+        color: var(--muted-text);
+    }
+
+    .locationCards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        .card{
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            background-color: var(--bg-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+
+            .icon{
+                margin-right: .5rem;
+                color: var(--text-color);
+                font-size: 1.5rem;
+                position: relative;
+            }
+
+            .nodeName {
+                font-size: var(--h1FontSize);
+                color: var(--text-color);
+                margin-bottom: .5rem;
+                font-weight: 700;
+                position: relative;
+            }
+
+            p {
+                font-size: var(--h2FontSize);
+                color: var(--text-color);
+            }
+
+            .badge-container{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 8px;
+                
+                .risk-badge{
+                    padding: 4px 10px;
+                    border-radius: 20px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #008000;
+                    background-color: #d4fcdc;
+                    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+                }
+            }
+            
+            
+        }
+    }
+}
+
+// .unavailabilityMessage {
+//     height: 200px;
+//     background: #eaeaea;
+//     border-radius: 8px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: #888;
+//     font-size: 1.2rem;
+//     margin-top: 1rem;
+// }

@@ -1,0 +1,88 @@
+:root {
+  --primaryColor: #800000; /* Maroon */
+  --hoverColor: #a83232;
+  --primaryColorDark: #4d0000;
+  --accent-color: #e57373;
+  --bg-color: #fdfdfd;
+  --text-color: #1a1a1a;
+  --muted-text: #666;
+  --inputcolor1: hsl(330, 12%, 97%);
+  --inputcolor2: hsl(154, 14%, 90%);
+  /* Fonts and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.activeAlertsContainer {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.activeAlertsContainer h2 {
+  font-size: var(--h2FontSize);
+  color: var(--text-color);
+  font-weight: 800;
+}
+.activeAlertsContainer p {
+  margin-top: 0.5rem;
+  font-size: var(--normalFontSize);
+  color: var(--muted-text);
+}
+.activeAlertsContainer .searchBar {
+  margin-top: 4rem;
+  padding: 2.5px 10px 2.5px 10px;
+}
+.activeAlertsContainer .searchBar h3 {
+  margin-bottom: 0.5rem;
+}
+.activeAlertsContainer .searchBar input {
+  padding: 3px;
+}
+.activeAlertsContainer .searchBar .searchButton {
+  position: relative;
+  margin-left: 0.2rem;
+  padding: 2.5px 10px 4.5px 10px;
+  border: none;
+  border-radius: 3px;
+  transition: 0.3s ease;
+  background: var(--hoverColor);
+  color: var(--bg-color);
+  justify-content: flex-start;
+  z-index: 1;
+}
+.activeAlertsContainer .searchBar .searchButton .icon {
+  font-size: 15px;
+  position: relative;
+  left: 25%;
+  padding: 0 -10px 0 0;
+  transform: translateX(-80%) translateY(20%);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.activeAlertsContainer .searchBar .searchButton:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+.activeAlertsContainer .activeAlertsTbl table {
+  margin-top: 3rem;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+.activeAlertsContainer .activeAlertsTbl th, .activeAlertsContainer .activeAlertsTbl td {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.activeAlertsContainer .activeAlertsTbl thead {
+  background-color: #f4f4f4;
+}
+.activeAlertsContainer .activeAlertsTbl tbody tr:hover {
+  background-color: #f9f9f9;
+}/*# sourceMappingURL=ActiveAlert.css.map */

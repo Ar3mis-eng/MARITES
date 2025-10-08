@@ -1,0 +1,50 @@
+[
+    {
+        "label": "January",
+        "signal": 10
+    },
+    {
+        "label": "February",
+        "signal": 10
+    },
+    {
+        "label": "March",
+        "signal": 12
+    },
+    {
+        "label": "April",
+        "signal": 12
+    },
+    {
+        "label": "May",
+        "signal": 12
+    },
+    {
+        "label": "June",
+        "signal": 12
+    },
+    {
+        "label": "July",
+        "signal": 16
+    },
+    {
+        "label": "August",
+        "signal": 17
+    },
+    {
+        "label": "September",
+        "signal": 18
+    },
+    {
+        "label": "October",
+        "signal": 19
+    },
+    {
+        "label": "November",
+        "signal": 20
+    },
+    {
+        "label": "December",
+        "signal": 20
+    }
+]

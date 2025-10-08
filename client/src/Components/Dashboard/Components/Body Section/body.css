@@ -1,0 +1,50 @@
+:root {
+  --primaryColor: #800000; /* Maroon */
+  --hoverColor: #a83232;
+  --primaryColorDark: #4d0000;
+  --accent-color: #e57373;
+  --bg-color: #fdfdfd;
+  --text-color: #1a1a1a;
+  --muted-text: #666;
+  --inputcolor1: hsl(330, 12%, 97%);
+  --inputcolor2: hsl(154, 14%, 90%);
+  /* Fonts and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.mainContent {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.mainContent .bottom {
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.defaultHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  color: #6b7280;
+}
+.defaultHome h2 {
+  font-size: var(--h2FontSize);
+  color: var(--muted-text);
+  font-weight: 800;
+}
+.defaultHome p {
+  font-size: var(--normalFontSize);
+  color: var(--muted-text);
+  margin-top: 1rem;
+}/*# sourceMappingURL=body.css.map */

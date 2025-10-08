@@ -1,0 +1,28 @@
+.analysisContainer {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.analysisContainer h2 {
+  font-size: var(--h2FontSize);
+  color: var(--text-color);
+  font-weight: 800;
+}
+.analysisContainer p {
+  margin-top: 0.5rem;
+  font-size: var(--normalFontSize);
+  color: var(--muted-text);
+}
+
+.unavailabilityMessage {
+  height: 200px;
+  background: #eaeaea;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}/*# sourceMappingURL=Analysis.css.map */

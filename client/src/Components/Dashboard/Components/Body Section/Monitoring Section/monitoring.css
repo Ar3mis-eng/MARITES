@@ -1,0 +1,82 @@
+:root {
+  --primaryColor: #800000; /* Maroon */
+  --hoverColor: #a83232;
+  --primaryColorDark: #4d0000;
+  --accent-color: #e57373;
+  --bg-color: #fdfdfd;
+  --text-color: #1a1a1a;
+  --muted-text: #666;
+  --inputcolor1: hsl(330, 12%, 97%);
+  --inputcolor2: hsl(154, 14%, 90%);
+  /* Fonts and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.monitoringContainer {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.monitoringContainer h2 {
+  font-size: var(--h2FontSize);
+  color: var(--text-color);
+  font-weight: 800;
+}
+.monitoringContainer p {
+  margin-top: 0.5rem;
+  font-size: var(--normalFontSize);
+  color: var(--muted-text);
+}
+.monitoringContainer .locationCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.monitoringContainer .locationCards .card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.monitoringContainer .locationCards .card .icon {
+  margin-right: 0.5rem;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  position: relative;
+}
+.monitoringContainer .locationCards .card .nodeName {
+  font-size: var(--h1FontSize);
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  position: relative;
+}
+.monitoringContainer .locationCards .card p {
+  font-size: var(--h2FontSize);
+  color: var(--text-color);
+}
+.monitoringContainer .locationCards .card .badge-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.monitoringContainer .locationCards .card .badge-container .risk-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #008000;
+  background-color: #d4fcdc;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}/*# sourceMappingURL=monitoring.css.map */
